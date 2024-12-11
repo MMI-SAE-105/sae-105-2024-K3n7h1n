@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Echoes of Time</title>
+    <link rel="stylesheet" href="/src/css/selection.css" />
+</head>
+<body class="page">
+
+    <header class="site-header">
+        <div class="site-header__logo">Echoes of Time</div>
+
+        <!-- Bouton hamburger -->
+        <button class="site-header__hamburger" aria-label="Menu" aria-expanded="false" aria-controls="main-nav">
+            <span class="site-header__hamburger-bar"></span>
+            <span class="site-header__hamburger-bar"></span>
+            <span class="site-header__hamburger-bar"></span>
+        </button>
+
+        <!-- Menu principal -->
+        <nav class="site-header__nav" id="main-nav">
+            <ul class="site-header__nav-list">
+                <li class="site-header__nav-item"><a class="site-header__nav-link" href="index.html">À Propos</a></li>
+                <li class="site-header__nav-item"><a class="site-header__nav-link" href="objet.html">L'horloge</a></li>
+                <li class="site-header__nav-item"><a class="site-header__nav-link" href="film.html">Film</a></li>
+                <li class="site-header__nav-item"><a class="site-header__nav-link" href="#glossaire">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="page__main">
+        <section id="selection" class="main-section main-section--intro">
+            <h1 class="main-section__title">Ma sélection</h1>
+            <p class="main-section__text">
+                Découvrez ma sélection éclectique de films et séries explorant le thème du temps sous différentes formes. Que ce soit à travers de fascinants voyages temporels, des paradoxes fascinants ou des histoires touchantes, je vous invite à plonger dans un univers narratif unique. Chacun de ces choix reflète une réflexion plus profonde sur la dimension temporelle qui nous entoure, offrant une expérience immersive qui, je l’espère, vous permettra de mieux appréhender le temps présent et futur, simultanément.
+            </p>
+            <div class="main-section__image-wrapper">
+                <img class="main-section__image" src="image_horloge.jpg" alt="Illustration d'une horloge" />
+            </div>
+        </section>
+
+        <section id="temps-cinema" class="main-section main-section--article">
+            <h2 class="main-section__subtitle">Le <span style="color: #ffda44;">Temps</span> au Cinéma</h2>
+            <p class="main-section__text">
+                Les films qui ajoutent le thème du temps fascinant par leur capacité à tisser un monde narratif entre linéarité et boucle, entre passé et futur. Regarder un film où l'écoulement du temps est à la fois une expérience sensible et un concept complexe nous pousse à remettre en question notre propre perception. Le temps au cinéma nous invite à la réflexion, au changement et à la perplexité. En jouant avec des idées comme le voyage temporel, les failles temporelles ou la relativité du temps, les films permettent de repousser les limites de l’imagination et de se projeter dans des réalités alternatives.
+            </p>
+            <section class="carousel">
+                <button class="carousel__nav carousel__nav--prev" aria-label="Précédent">&#10094;</button>
+                <div class="carousel__track-container">
+                    <ul class="carousel__track">
+                        <li class="carousel__slide">
+                            <img class="carousel__image" src="/assets/img/selec1.webp" alt="Affiche du Film 1">
+                            <div class="carousel__caption">"Interstellar" (2014) aborde le temps sous l'angle scientifique de la relativité. Le film suit un groupe d'astronautes voyageant à travers l'espace pour trouver une nouvelle planète habitable. 
+                                Une scène marquante illustre la dilatation du temps : sur une planète proche d'un trou noir, une heure équivaut à sept ans sur Terre. 
+                                Cette représentation cinématographique de la théorie d'Einstein met en lumière les effets de la gravité sur le temps.</div>
+                        </li>
+                        <li class="carousel__slide">
+                            <img class="carousel__image" src="/assets/img/selec2.webp" alt="Affiche du Film 2">
+                            <div class="carousel__caption">Dans Un jour sans fin, Phil Connors, un présentateur météo cynique, se retrouve coincé à revivre sans cesse la même journée lors d’un reportage dans une petite ville. 
+                                Alors qu'il passe par diverses phases de frustration, de désespoir et de tentative d'amélioration personnelle, il doit apprendre à changer sa perspective et à tirer le meilleur de chaque journée pour espérer échapper à cette boucle temporelle.</div>
+                        </li>
+                        <li class="carousel__slide">
+                            <img class="carousel__image" src="/assets/img/selec3.webp" alt="Affiche du Film 3">
+                            <div class="carousel__caption">Dans Stranger Things, un groupe d'enfants dans une petite ville américaine découvre une série d'événements surnaturels après la disparition de leur ami Will. 
+                                Alors qu'ils rencontrent une fille aux pouvoirs psychiques nommée Eleven, ils réalisent que leur ville est liée à une dimension parallèle terrifiante appelée l'Upside Down. 
+                                Ensemble, ils affrontent des créatures monstrueuses et des forces secrètes pour sauver leur ami et protéger leur monde des dangers inconnus.</div>
+                        </li>
+                        <li class="carousel__slide">
+                            <img class="carousel__image" src="/assets/img/selec4.webp" alt="Affiche du Film 3">
+                            <div class="carousel__caption">Dans Loki, après avoir échappé aux Avengers, le dieu de la malice est capturé par la Time Variance Authority (TVA), une organisation qui surveille la ligne temporelle. 
+                                Forcé de collaborer, Loki explore les mystères du temps, du multivers et remet en question sa propre identité, tout en affrontant des menaces qui pourraient bouleverser l'équilibre de l'univers.</div>
+                        </li>
+                        <li class="carousel__slide">
+                            <img class="carousel__image" src="/assets/img/selec5.webp" alt="Affiche du Film 3">
+                            <div class="carousel__caption">Dans Edge of Tomorrow, un soldat inexpérimenté, William Cage, se retrouve pris dans une boucle temporelle après avoir été tué en combattant des extraterrestres envahisseurs. 
+                                À chaque mort, il revit la même journée, acquérant de nouvelles compétences et se rapprochant d'une solution pour vaincre l'ennemi. 
+                                Avec l'aide de la guerrière Rita Vrataski, il doit briser ce cycle et sauver l'humanité avant que le temps ne s'épuise.</div>
+                    </ul>
+                </div>
+                <button class="carousel__nav carousel__nav--next" aria-label="Suivant">&#10095;</button>
+            </section>
+            
+        </body>
+        <footer class="site-footer">
+            <img class="site-footer__logo" src="/assets/img/logo.svg" alt="Logo" />
+            <p class="site-footer__item">Enzo Locatelli MMI 1 B2</p>
+            <p class="site-footer__item"><a class="site-footer__link" href="mailto:enzort70290@gmail.com">enzort70290@gmail.Com</a></p>
+            <p class="site-footer__item">Autre projets</p>
+            <p class="site-footer__item">Articles</p>
+            <p class="site-footer__item">Contact</p>
+            <p class="site-footer__item">Glossaire</p>
+            <p class="site-footer__item">Projet réalisé en 2024 dans le cadre d’un exercice pédagogique au département MMi de Montbéliard.</p>
+        </footer>
+        <script src="/src/js/script.js"></script>
+        </html>
