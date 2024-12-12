@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Billetterie - Cinematsuri</title>
+    <link rel="stylesheet" href="src/css/index.css" />
+</head>
+<body class="page">
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header__logo">
+            <img src="assets/img/logo.webp" alt="Logo du festival" class="header__logo-img" />
+        </div>
+        <button class="header__toggle" aria-label="Ouvrir le menu">
+            <span class="header__toggle-bar"></span>
+            <span class="header__toggle-bar"></span>
+            <span class="header__toggle-bar"></span>
+        </button>
+    </header>
+
+    <!-- Menu latéral -->
+    <nav class="nav">
+        <button class="nav__close" aria-label="Fermer le menu">&times;</button>
+        <ul class="nav__list">
+            <li class="nav__item"><a href="programme.html" class="nav__link">Programme</a></li>
+            <li class="nav__item"><a href="bandes-annonces.html" class="nav__link">Bandes-annonces</a></li>
+            <li class="nav__item"><a href="festival.html" class="nav__link">Le Festival</a></li>
+            <li class="nav__item"><a href="billetterie.html" class="nav__link">Billetterie</a></li>
+            <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <!-- Section Billetterie -->
+        <section class="section ticket">
+            <h2 class="section__title ticket__title">Billetterie</h2>
+            <p class="ticket__description">
+                Bienvenue sur la page de billetterie du Festival Matsuri ! Deux options de pass sont disponibles pour vous permettre de profiter de l'événement en toute simplicité :
+                <br><br>
+                • Matsuri Pass : 15€ par personne. Ce pass vous donne accès à toutes les activités du festival.
+                <br>
+                • MatsuKID : 8€ pour les enfants de moins de 12 ans. Un tarif réduit pour les plus jeunes festivaliers !
+                <br><br>
+                Chaque billet est disponible en quelques clics. Il vous suffit de sélectionner l'option qui correspond à vos besoins, puis de cliquer sur "Acheter" pour compléter votre commande.
+            </p>
+
+            <div class="ticket__cards">
+                <div class="ticket__card">
+                    <h3 class="ticket__card-title">Matsuri Pass</h3>
+                    <p class="ticket__card-price">15€ <span class="ticket__card-unit">/pers</span></p>
+                    <a href="achat.html" class="ticket__card-cta">Acheter</a>
+                </div>
+                <div class="ticket__card">
+                    <h3 class="ticket__card-title">MatsuKID</h3>
+                    <p class="ticket__card-price">8€ <span class="ticket__card-unit">/enfants</span></p>
+                    <p class="ticket__card-condition">* Condition : enfant -12 ans</p>
+                    <a href="achat.html" class="ticket__card-cta">Acheter</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Suivez-nous -->
+        <footer class="footer">
+            <div class="footer__socials">
+                <a href="#" class="footer__social-link">TikTok</a>
+                <a href="#" class="footer__social-link">Instagram</a>
+                <a href="mailto:info@matsurifestival.com" class="footer__social-link">Email</a>
+                
+                
+            </div>
+            <p>Enzo Locatelli MMI 1 B2</p>
+            <br>
+            <p class="footer__copy">© 2024 Cinematsu Festival. Tous droits réservés.</p>
+        </footer>
+    </main>
+
+    <script src="src/js/script.js"></script>
+</body>
+</html>

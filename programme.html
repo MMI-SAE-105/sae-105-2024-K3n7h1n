@@ -4,11 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Festival Cinematsu</title>
-    <link rel="stylesheet" href="/src/css/programme.css" />
+    <link rel="stylesheet" href="/src/css/index.css" />
 </head>
 <body class="page">
-
-    <!-- Header -->
     <header class="header">
         <div class="header__logo">
             <img src="/assets/img/logo.webp" alt="Logo du festival" class="header__logo-img" />
@@ -19,7 +17,25 @@
             <span class="header__toggle-bar"></span>
         </button>
     </header>
-
+    
+    <nav class="nav">
+        <button class="nav__close" aria-label="Fermer le menu">&times;</button>
+        <ul class="nav__list">
+            <li class="nav__item"><a href="programme.html" class="nav__link">Programme</a></li>
+            <li class="nav__item"><a href="bandes-annonces.html" class="nav__link">Bandes-annonces</a></li>
+            <li class="nav__item"><a href="festival.html" class="nav__link">Le Festival</a></li>
+            <li class="nav__item"><a href="billetterie.html" class="nav__link">Billetterie</a></li>
+            <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="festival" class="section festival">
+        <img src="/assets/img/img1.webp" alt="Visuel du festival" class="background__img" />
+        <h2 class="section__title festival__title">Programme</h2>
+        <p class="festival__description">Programme du Festival
+            Notre programme met à l’honneur les plus grands studios d’animation japonaise. En partenariat avec le légendaire Studio Ghibli, nous vous proposons une sélection de films incontournables, dont l’inoubliable Le Château Ambulant.
+            Découvrez également les chefs-d'œuvre d’autres studios renommés comme Comix Wave, avec la projection de Your Name, et Bones, avec My Hero Academia, pour un voyage à travers les univers animés les plus emblématiques.</p>
+        </a>
+    </section>
     <main class="main">
         <!-- Carrousel Studio Ghibli -->
         <section id="programme-ghibli" class="section programme">

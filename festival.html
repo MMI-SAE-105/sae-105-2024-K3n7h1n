@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Festival - Cinematsuri</title>
+    <link rel="stylesheet" href="src/css/index.css" />
+</head>
+<body class="page">
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header__logo">
+            <img src="assets/img/logo.webp" alt="Logo du festival" class="header__logo-img" />
+        </div>
+        <button class="header__toggle" aria-label="Ouvrir le menu">
+            <span class="header__toggle-bar"></span>
+            <span class="header__toggle-bar"></span>
+            <span class="header__toggle-bar"></span>
+        </button>
+    </header>
+
+    <!-- Menu latéral -->
+    <nav class="nav">
+        <button class="nav__close" aria-label="Fermer le menu">&times;</button>
+        <ul class="nav__list">
+            <li class="nav__item"><a href="programme.html" class="nav__link">Programme</a></li>
+            <li class="nav__item"><a href="bandes-annonces.html" class="nav__link">Bandes-annonces</a></li>
+            <li class="nav__item"><a href="festival.html" class="nav__link">Le Festival</a></li>
+            <li class="nav__item"><a href="billetterie.html" class="nav__link">Billetterie</a></li>
+            <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <!-- Section Festival -->
+        <section class="section festival">
+            <img src="/assets/img/img1.webp" alt="Visuel du festival" class="background__img" />
+            <h2 class="section__title festival__title">Festival</h2>
+            <p class="festival__description">
+                Découvrez un festival unique entièrement dédié aux films d'animation japonais. Situé à Andelnans, près de Belfort, il propose une expérience immersive avec des projections exclusives, dont certains films des Studios Ghibli adaptés aux enfants comme aux passionnés.
+                Original par son focus sur l'animation japonaise et son emplacement en dehors des grands centres comme Paris
+                <br><br>
+                le festival offre aussi des rencontres avec des professionnels du milieu, des ateliers pour découvrir les métiers de l'animation, et des stands créatifs en lien avec la culture japonaise
+                <br><br>
+                Venez explorer l'univers riche et créatif de l'animation japonaise !
+            </p>
+        </section>
+
+        <!-- Partenaire -->
+        <section class="section partenaire">
+            <h2 class="section__title partenaire__title">Partenaire</h2>
+            <div class="partenaire__logo-container">
+                <img src="assets/img/partenaire.webp" alt="Logo du partenaire" class="partenaire__logo" />
+            </div>
+        </section>
+
+        <!-- Suivez-nous -->
+        <footer class="footer">
+            <div class="footer__socials">
+                <a href="#" class="footer__social-link">TikTok</a>
+                <a href="#" class="footer__social-link">Instagram</a>
+                <a href="mailto:info@matsurifestival.com" class="footer__social-link">Email</a>
+                
+                
+            </div>
+            <p>Enzo Locatelli MMI 1 B2</p>
+            <br>
+            <p class="footer__copy">© 2024 Cinematsu Festival. Tous droits réservés.</p>
+        </footer>
+    </main>
+
+    <script src="src/js/script.js"></script>
+</body>
+</html>

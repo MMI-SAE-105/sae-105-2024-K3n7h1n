@@ -1,0 +1,23 @@
+.contact__title {
+    margin-bottom: 0.5rem;
+}
+
+.contact__description {
+    margin-bottom: 1rem;
+}
+
+.contact__link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.contact__img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+}
+
+.contact__img:hover {
+    border: 2px solid var(--color-pink);
+}

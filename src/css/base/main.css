@@ -1,0 +1,20 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles de base */
+body.page {
+    font-family: 'Mulish', sans-serif;
+    background: var(--color-white);
+    color: var(--color-black);
+}
+
+h2 {
+    color: var(--color-pink);
+    font-family: 'Amatic SC', cursive;
+    font-size: 2rem;
+    text-align: center;
+}

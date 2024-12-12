@@ -1,0 +1,37 @@
+.trailers__description {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
+    max-width: 300px;
+    margin: 0 auto 2rem auto;
+}
+
+.trailers__item {
+    margin-bottom: 2rem;
+}
+
+
+.trailers__video-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    background: var(--color-black);
+    height: auto;
+}
+
+.trailers__video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.trailers__video-title {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    text-align: center;
+    olor: var(--color-pink);
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.5rem;
+    
+}

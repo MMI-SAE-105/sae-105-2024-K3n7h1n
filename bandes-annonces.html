@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Bandes-annonces - Cinematsuri</title>
+    <link rel="stylesheet" href="src/css/index.css" />
+</head>
+<body class="page">
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header__logo">
+            <img src="assets/img/logo.webp" alt="Logo du festival" class="header__logo-img" />
+        </div>
+        <button class="header__toggle" aria-label="Ouvrir le menu">
+            <span class="header__toggle-bar"></span>
+            <span class="header__toggle-bar"></span>
+            <span class="header__toggle-bar"></span>
+        </button>
+    </header>
+
+    <!-- Menu latéral -->
+    <nav class="nav">
+        <button class="nav__close" aria-label="Fermer le menu">&times;</button>
+        <ul class="nav__list">
+            <li class="nav__item"><a href="programme.html" class="nav__link">Programme</a></li>
+            <li class="nav__item"><a href="bandes-annonces.html" class="nav__link">Bandes-annonces</a></li>
+            <li class="nav__item"><a href="festival.html" class="nav__link">Le Festival</a></li>
+            <li class="nav__item"><a href="billetterie.html" class="nav__link">Billetterie</a></li>
+            <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <!-- Section Bandes-Annonces -->
+        <section class="section trailers">
+            <h2 class="section__title trailers__title">Bandes-Annonces</h2>
+            <p class="trailers__description">
+                Bande-annonce du Festival
+Préparez-vous à plonger dans l’univers de l’animation japonaise avec notre sélection de bandes-annonces exclusives ! Retrouvez des aperçus des films que vous pourrez découvrir lors du festival, avec des extraits des chefs-d'œuvre des Studios Ghibli, Comix Wave, Bones, et bien d'autres.
+                <br><br>
+                Laissez-vous emporter par la magie de l’animation japonaise et découvrez un avant-goût des moments forts à venir !
+            </p>
+
+            <!-- Vidéo 1 : Voyage de Chihiro -->
+            <div class="trailers__item">
+                <div class="trailers__video-container">
+                    <!-- Vidéo locale -->
+                    <video class="trailers__video" controls poster="assets/img/chihiro.webp">
+                        <source src="assets/videos/Chihiro.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la balise vidéo.
+                    </video>
+                </div>
+                <p class="trailers__video-title">Voyage de Chihiro</p>
+            </div>
+
+            <!-- Vidéo 2 : Your name -->
+            <div class="trailers__item">
+                <div class="trailers__video-container">
+                    <video class="trailers__video" controls poster="assets/img/yourname.webp">
+                        <source src="assets/videos/Your-name.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la balise vidéo.
+                    </video>
+                </div>
+                <p class="trailers__video-title">Your name</p>
+            </div>
+
+            <!-- Vidéo 3 : My Hero Academia Your Next -->
+            <div class="trailers__item">
+                <div class="trailers__video-container">
+                    <video class="trailers__video" controls poster="assets/img/mha.webp">
+                        <source src="assets/videos/mha.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la balise vidéo.
+                    </video>
+                </div>
+                <p class="trailers__video-title">My hero academia Your Next</p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__socials">
+                <a href="#" class="footer__social-link">TikTok</a>
+                <a href="#" class="footer__social-link">Instagram</a>
+                <a href="mailto:info@matsurifestival.com" class="footer__social-link">Email</a>
+                
+                
+            </div>
+            <p>Enzo Locatelli MMI 1 B2</p>
+            <br>
+            <p class="footer__copy">© 2024 Cinematsu Festival. Tous droits réservés.</p>
+        </footer>
+    </main>
+
+    <script src="src/js/script.js"></script>
+</body>
+</html>
