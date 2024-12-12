@@ -3,95 +3,144 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Echoes of Time</title>
+    <title>Festival Cinematsu</title>
     <link rel="stylesheet" href="/src/css/index.css" />
 </head>
 <body class="page">
 
-    <header class="site-header">
-        <div class="site-header__logo">Echoes of Time</div>
-
-        <!-- Bouton hamburger -->
-        <button class="site-header__hamburger" aria-label="Menu" aria-expanded="false" aria-controls="main-nav">
-            <span class="site-header__hamburger-bar"></span>
-            <span class="site-header__hamburger-bar"></span>
-            <span class="site-header__hamburger-bar"></span>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__logo">
+            <img src="/assets/img/logo.webp" alt="Logo du festival" class="header__logo-img" />
+        </div>
+        <button class="header__toggle" aria-label="Ouvrir le menu">
+            <span class="header__toggle-bar"></span>
+            <span class="header__toggle-bar"></span>
+            <span class="header__toggle-bar"></span>
         </button>
-
-        <!-- Menu principal -->
-        <nav class="site-header__nav" id="main-nav">
-            <ul class="site-header__nav-list">
-                <li class="site-header__nav-item"><a class="site-header__nav-link" href="index.html">À Propos</a></li>
-                <li class="site-header__nav-item"><a class="site-header__nav-link" href="objet.html">L'horloge</a></li>
-                <li class="site-header__nav-item"><a class="site-header__nav-link" href="film.html">Film</a></li>
-                <li class="site-header__nav-item"><a class="site-header__nav-link" href="#glossaire">Contact</a></li>
-            </ul>
-        </nav>
     </header>
-
-    <main class="page__main">
-        <section id="apropos" class="main-section main-section--about">
-            <img class="main-section__image" src="/assets/img/fond.webp" alt="Horloge" />
-            <h1 class="main-section__title">À Propos d'Echoes of Time</h1>
-            <p class="main-section__text">Mon site est dédié à l'exploration de l'histoire des horloges et du temps . 
-                De aujourd’hui aux Temps quantique, je vous invite à découvrir comment les horloges ont évolué et vont influencé notre quotidien.</p>
-            
-            <h2 class="main-section__subtitle">Définition de l’horloge</h2>
-            <p class="main-section__text">"L'horloge, symbole intemporel de la mesure du temps, rythme nos vies en capturant chaque instant qui s'écoule. 
-                Du simple tic-tac à la course effrénée des aiguilles, elle rappelle que le temps ne s'arrête jamais, mais continue de filer, nous poussant à saisir l'instant présent."</p>
-        </section>
-
-        <section id="articles" class="main-section main-section--articles">
-            <h2 class="main-section__title">Mes articles principaux</h2>
-
-            <article class="card">
-                <img class="card__image" src="/assets/img/img1.webp" alt="Horloge quantique" />
-                <h3 class="card__title">Présentation de l’objet</h3>
-                <p class="card__text">Découvrez comment la technologie quantique redéfinit l'horloge, transformant notre perception du temps en une expérience fluide et personnalisée.</p>
-                <a class="card__link" href="objet.html">Lire la suite</a>
-            </article>
-
-            <article class="card">
-                <img class="card__image" src="/assets/img/img2.webp" alt="Film" />
-                <h3 class="card__title">Présentation du Film</h3>
-                <p class="card__text">Plongez dans l'émouvante histoire de deux adolescents dont les destins se croisent mystérieusement grâce à un échange de corps surnaturel.</p>
-                <a class="card__link" href="#">Lire la suite</a>
-            </article>
-
-            <article class="card">
-                <img class="card__image" src="/assets/img/img3.webp" alt="Coldplay" />
-                <h3 class="card__title">Présentation de la musique</h3>
-                <p class="card__text">Avec son rythme hypnotique et ses mélodies poignantes, "Clocks" de Coldplay nous entraîne dans une réflexion profonde sur le temps qui file, les choix non faits, et le désir d’y trouver un sens.</p>
-                <a class="card__link" href="#">Lire la suite</a>
-            </article>
-
-            <article class="card">
-                <img class="card__image" src="/assets/img/img4.webp" alt="Christopher Nolan" />
-                <h3 class="card__title">Présentation Réalisateur</h3>
-                <p class="card__text">Maître du cinéma moderne, Christopher Nolan est reconnu pour ses récits captivants et complexes, mêlant science, psychologie et temporalité dans des chefs-d'œuvre.</p>
-                <a class="card__link" href="#">Lire la suite</a>
-            </article>
-
-            <article class="card">
-                <img class="card__image" src="/assets/img/img5.webp" alt="L'Horloger d'Everton" />
-                <h3 class="card__title">Présentation du livre</h3>
-                <p class="card__text">Dans "L'Horloger d'Everton", Georges Simenon nous plonge dans un drame poignant où un horloger voit sa vie bouleversée par un crime commis par son fils.</p>
-                <a class="card__link" href="#">Lire la suite</a>
-            </article>
-        </section>
-
+    <!-- compte a rebourd -->
+    <section class="countdown">
+        <img src="/assets/img/img2.webp" alt="Visuel du compte à rebours" class="countdown__img" />
+        <div class="countdown__container">
+            <h2 class="countdown__title">Festival CinéMatsuri</h2>
+            <p class="countdown__subtitle">Un événement unique dédié au film de l’animation japonaise accessible à tout âge.</p>
+            <div class="countdown__time">
+                <div class="countdown__unit">
+                    <span class="countdown__number" id="countdown-days">0</span>
+                    <span class="countdown__label">Jours</span>
+                </div>
+                <div class="countdown__unit">
+                    <span class="countdown__number" id="countdown-hours">0</span>
+                    <span class="countdown__label">Heures</span>
+                </div>
+                <div class="countdown__unit">
+                    <span class="countdown__number" id="countdown-minutes">0</span>
+                    <span class="countdown__label">Minutes</span>
+                </div>
+                <div class="countdown__unit">
+                    <span class="countdown__number" id="countdown-seconds">0</span>
+                    <span class="countdown__label">Secondes</span>
+                </div>
+            </div>
+            <a href="billetterie.html" class="countdown__cta">Acheter des billets</a>
+        </div>
+    </section>
     
+    <!-- Menu latéral -->
+    <nav class="nav">
+        <button class="nav__close" aria-label="Fermer le menu">&times;</button>
+        <ul class="nav__list">
+            <li class="nav__item"><a href="programme.html" class="nav__link">Programme</a></li>
+            <li class="nav__item"><a href="bandes-annonces.html" class="nav__link">Bandes-annonces</a></li>
+            <li class="nav__item"><a href="festival.html" class="nav__link">Le Festival</a></li>
+            <li class="nav__item"><a href="billetterie.html" class="nav__link">Billetterie</a></li>
+            <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+    </nav>
+
+        <!-- Section Festival  -->
+        <section id="festival" class="section festival">
+            <img src="/assets/img/img1.webp" alt="Visuel du festival" class="background__img" />
+            <h2 class="section__title festival__title">Le Festival</h2>
+            <p class="festival__description">Découvrez l'histoire et les valeurs de notre festival centré sur le partage, la solidarité et la créativité.            </p>
+            <a href="festival.html" class="festival__link">
+                <img src="/assets/img/festival.webp" alt="Visuel du festival" class="festival__img" />
+            </a>
+        </section>
+
+        <!-- Section Programme -->
+            <!-- Carrousel-->
+            <section id="programme" class="section programme">
+                <h2 class="section__title programme__title">
+                    <a href="programme.html" class="programme__title-link">Programme</a>
+                </h2>
+                <p class="programme__description">Explorez les projections prévues.</p>
+            
+                <div class="programme__carousel">
+                    <button class="programme__carousel-btn programme__carousel-btn--prev" aria-label="Précédent">←</button>
+                    <div class="programme__carousel-track-container">
+                        <div class="programme__carousel-track">
+                            <article class="programme__item">
+                                <img src="/assets/img/film2.webp" alt="Affiche du film 1" class="programme__item-img" />
+                                <h3 class="programme__item-title">Voyage de Chihiro</h3>
+                                
+                            </article>
+                            <article class="programme__item">
+                                <img src="/assets/img/film1.webp" alt="Affiche du film 2" class="programme__item-img" />
+                                <h3 class="programme__item-title">My hero Academia</h3>
+                                
+                            </article>
+                            <article class="programme__item">
+                                <img src="/assets/img/film3.webp" alt="Affiche du film 3" class="programme__item-img" />
+                                <h3 class="programme__item-title">Suzume</h3>
+                               
+                            </article>
+                        </div>
+                    </div>
+                    <button class="programme__carousel-btn programme__carousel-btn--next" aria-label="Suivant">→</button>
+                </div>
+            </section>
+
+        <!-- Bandes-annonces -->
+        <section id="bandes-annonces" class="section trailers">
+            <h2 class="section__title trailers__title">Bandes-annonces</h2>
+            <p class="trailers__description">Regardez les bandes-annonces.</p>
+            <a href="bandes-annonces.html" class="trailers__link">
+                <img src="/assets/img/trailer.webp" alt="Aperçu des bandes-annonces" class="trailers__img" />
+            </a>
+        </section>
+
+        <!-- Billetterie  -->
+        <section id="billetterie" class="section ticketing">
+            <h2 class="section__title ticketing__title">Billetterie</h2>
+            <p class="ticketing__description">Choisissez le pass qui vous convient et réservez vos billets en ligne.</p>
+            <a href="billetterie.html" class="ticketing__link">
+                <img src="/assets/img/billet.webp" alt="Aperçu de la billetterie" class="ticketing__img" />
+            </a>
+        </section>
+
+        <!-- Contact-->
+        <section id="contact" class="section contact">
+            <h2 class="section__title contact__title">Contact</h2>
+            <p class="contact__description">Pour toute question, n'hésitez pas à nous contacter.</p>
+            <a href="contact.html" class="contact__link">
+                <img src="assets/img/contact.webp" alt="Aperçu de la page contact" class="contact__img" />
+            </a>
+        </section>
     </main>
 
-    <footer class="site-footer">
-        <img class="site-footer__logo" src="/assets/img/logo.svg" alt="Logo" />
-        <p class="site-footer__item">Enzo Locatelli MMI 1 B2</p>
-        <p class="site-footer__item"><a class="site-footer__link" href="mailto:enzort70290@gmail.com">enzort70290@gmail.Com</a></p>
-        <p class="site-footer__item">Autre projets</p>
-        <p class="site-footer__item">Articles</p>
-        <p class="site-footer__item">Contact</p>
-        <p class="site-footer__item">Glossaire</p>
-        <p class="site-footer__item">Projet réalisé en 2024 dans le cadre d’un exercice pédagogique au département MMi de Montbéliard.</p>
+    <footer class="footer">
+        <div class="footer__socials">
+            <a href="#" class="footer__social-link">TikTok</a>
+            <a href="#" class="footer__social-link">Instagram</a>
+            <a href="mailto:info@matsurifestival.com" class="footer__social-link">Email</a>
+            
+            
+        </div>
+        <p>Enzo Locatelli MMI 1 B2</p>
+        <br>
+        <p class="footer__copy">© 2024 Cinematsu Festival. Tous droits réservés.</p>
     </footer>
 
     <script src="/src/js/script.js"></script>

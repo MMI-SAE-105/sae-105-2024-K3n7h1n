@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Festival Cinematsu</title>
+    <link rel="stylesheet" href="/src/css/programme.css" />
+</head>
+<body class="page">
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header__logo">
+            <img src="/assets/img/logo.webp" alt="Logo du festival" class="header__logo-img" />
+        </div>
+        <button class="header__toggle" aria-label="Ouvrir le menu">
+            <span class="header__toggle-bar"></span>
+            <span class="header__toggle-bar"></span>
+            <span class="header__toggle-bar"></span>
+        </button>
+    </header>
+
+    <main class="main">
+        <!-- Carrousel Studio Ghibli -->
+        <section id="programme-ghibli" class="section programme">
+            <h2 class="section__title programme__title">
+                <a  class="programme__title-link">Studio Ghibli</a>
+            </h2>
+
+            <div class="programme__carousel">
+                <button class="programme__carousel-btn programme__carousel-btn--prev" aria-label="Précédent">←</button>
+                <div class="programme__carousel-track-container">
+                    <div class="programme__carousel-track">
+                        <article class="programme__item">
+                            <img src="/assets/img/film2.webp" alt="Affiche du film 1" class="programme__item-img" />
+                            <h3 class="programme__item-title">Voyage de Chihiro</h3>
+                            <p class="programme__item-description">Voyage de Chihiro<br>Le 11 juillet à 16H30</p>
+                        </article>
+                        <article class="programme__item">
+                            <img src="/assets/img/princesse.webp" alt="Affiche du film 2" class="programme__item-img" />
+                            <h3 class="programme__item-title">Princesse Mononoké</h3>
+                            <p class="programme__item-description">Princesse Mononoké<br>Le 11 juillet à 19H30</p>   
+                        </article>
+                        <article class="programme__item">
+                            <img src="/assets/img/chateau.webp" alt="Affiche du film 3" class="programme__item-img" />
+                            <h3 class="programme__item-title">Le Château Ambulant</h3>
+                            <p class="programme__item-description">Le Château Ambulant<br>Le 11 juillet à 14H</p>  
+                        </article>
+                    </div>
+                </div>
+                <button class="programme__carousel-btn programme__carousel-btn--next" aria-label="Suivant">→</button>
+            </div>
+        </section>
+
+        <!-- Carrousel CoMix Wave -->
+        <section id="programme-comix" class="section programme">
+            <h2 class="section__title programme__title">
+                <a class="programme__title-link">CoMix Wave</a>
+            </h2>
+            <div class="programme__carousel">
+                <button class="programme__carousel-btn programme__carousel-btn--prev" aria-label="Précédent">←</button>
+                <div class="programme__carousel-track-container">
+                    <div class="programme__carousel-track">
+                        <article class="programme__item">
+                            <img src="/assets/img/yourname.webp" alt="Affiche du film 1" class="programme__item-img" />
+                            <h3 class="programme__item-title">Your Name</h3>
+                            <p class="programme__item-description">Your Name<br>Le 12 juillet à 18H</p>  
+                        </article>
+                        <article class="programme__item">
+                            <img src="/assets/img/weathering.webp" alt="Affiche du film 2" class="programme__item-img" />
+                            <h3 class="programme__item-title">Weathering With You</h3>
+                            <p class="programme__item-description">Weathering With You<br>Le 12 juillet à 22H30</p>  
+                        </article>
+                        <article class="programme__item">
+                            <img src="/assets/img/film3.webp" alt="Affiche du film 3" class="programme__item-img" />
+                            <h3 class="programme__item-title">Suzume</h3>
+                            <p class="programme__item-description">Suzume<br>Le 12 juillet à 20H15</p>  
+                        </article>
+                    </div>
+                </div>
+                <button class="programme__carousel-btn programme__carousel-btn--next" aria-label="Suivant">→</button>
+            </div>
+        </section>
+
+        <!-- Carrousel Bones -->
+        <section id="programme-bones" class="section programme">
+            <h2 class="section__title programme__title">
+                <a class="programme__title-link">Bones</a>
+            </h2>
+            <div class="programme__carousel">
+                <button class="programme__carousel-btn programme__carousel-btn--prev" aria-label="Précédent">←</button>
+                <div class="programme__carousel-track-container">
+                    <div class="programme__carousel-track">
+                        <article class="programme__item">
+                            <img src="/assets/img/mhafilm2.webp" alt="Affiche du film 1" class="programme__item-img" />
+                            <h3 class="programme__item-title">My hero Academia Your next</h3>
+                            <p class="programme__item-description">My hero Academia Your next<br>Le 13 juillet à 14H</p>  
+                        </article>
+                        <article class="programme__item">
+                            <img src="/assets/img/film3.webp" alt="Affiche du film 2" class="programme__item-img" />
+                            <h3 class="programme__item-title">My hero Academia The movie</h3>
+                            <p class="programme__item-description">My hero Academia The movie<br>Le 13 juillet à 16H15</p>  
+                        </article>
+                        <article class="programme__item">
+                            <img src="/assets/img/mhafilm.webp" alt="Affiche du film 3" class="programme__item-img" />
+                            <h3 class="programme__item-title">My hero Academia Heroes Rising</h3>
+                            <p class="programme__item-description">My hero Academia Heroes Rising<br>Le 13 juillet à 18H</p>  
+                        </article>
+                    </div>
+                </div>
+                <button class="programme__carousel-btn programme__carousel-btn--next" aria-label="Suivant">→</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__socials">
+            <a href="#" class="footer__social-link">TikTok</a>
+            <a href="#" class="footer__social-link">Instagram</a>
+            <a href="mailto:info@matsurifestival.com" class="footer__social-link">Email</a>
+        </div>
+        <p>Enzo Locatelli MMI 1 B2</p>
+        <br>
+        <p class="footer__copy">© 2024 Cinematsu Festival. Tous droits réservés.</p>
+    </footer>
+
+    <script src="/src/js/script.js"></script>
+</body>
+</html>
