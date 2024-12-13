@@ -137,6 +137,7 @@
     display: flex;
     align-items: center;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .programme__carousel-track-container {
@@ -285,6 +286,7 @@
 .ticket__cards {
     display: grid;
     gap: 1rem;
+    margin-bottom: 1rem;
 }
 
 .ticket__card {

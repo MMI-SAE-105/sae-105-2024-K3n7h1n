@@ -7,9 +7,10 @@
 
 /* Styles de base */
 body.page {
-    font-family: 'Mulish', sans-serif;
+    font-family: 'actor';
     background: var(--color-white);
     color: var(--color-black);
+    
 }
 
 h2 {
@@ -18,3 +19,5 @@ h2 {
     font-size: 2rem;
     text-align: center;
 }
+
+

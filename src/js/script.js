@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Gestion du menu (uniquement si les éléments du menu existent)
+   
     const nav = document.querySelector('.nav');
     const toggleBtn = document.querySelector('.header__toggle');
     const closeBtn = document.querySelector('.nav__close');
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
-
+    // création du JS par IA à partir d'ici 
     // Countdown (uniquement si les éléments du compte à rebours existent)
     const eventDate = new Date("Aug 21, 2025 00:00:00").getTime();
     const daysEl = document.getElementById('countdown-days');
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
         updateCountdown();
     }
 
-    // Gestion de plusieurs carrousels (uniquement si des carrousels existent)
+    // Gestion de plusieurs carrousels 
     const carousels = document.querySelectorAll('.programme__carousel');
 
     if (carousels.length > 0) {
