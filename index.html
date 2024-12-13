@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Festival Cinematsu</title>
     <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
-<link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
-<link rel="manifest" href="/assets/favicon/site.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
     <link rel="stylesheet" href="/src/css/index.css" />
 </head>
 <body class="page">
@@ -22,9 +22,9 @@
             </a> 
         </div>
         <button class="header__toggle" aria-label="Ouvrir le menu">
-            <span class="header__toggle-bar"></span>
-            <span class="header__toggle-bar"></span>
-            <span class="header__toggle-bar"></span>
+            <span class="header__toggle-bar" aria-hidden="true"></span>
+            <span class="header__toggle-bar" aria-hidden="true"></span>
+            <span class="header__toggle-bar" aria-hidden="true"></span>
         </button>
     </header>
     <!-- compte a rebourd -->
@@ -57,8 +57,11 @@
     
     <!-- Menu latéral -->
     <nav class="nav">
-        <button class="nav__close" aria-label="Fermer le menu">&times;</button>
+        <button class="nav__close" aria-label="Fermer le menu">
+            <span aria-hidden="true">&times;</span>
+        </button>
         <ul class="nav__list">
+            <li class="nav__item"><a href="index.html" class="nav__link">Accueil</a></li>
             <li class="nav__item"><a href="programme.html" class="nav__link">Programme</a></li>
             <li class="nav__item"><a href="bandes-annonces.html" class="nav__link">Bandes-annonces</a></li>
             <li class="nav__item"><a href="festival.html" class="nav__link">Le Festival</a></li>
@@ -71,7 +74,7 @@
         <section id="festival" class="section festival">
             <img src="/assets/img/img1.webp" alt="Visuel du festival" class="background__img" />
             <h2 class="section__title festival__title">Le Festival</h2>
-            <p class="festival__description">Découvrez l'histoire et les valeurs de notre festival centré sur le partage, la solidarité et la créativité.            </p>
+            <p class="festival__description">Découvrez l'histoire et les valeurs de notre festival centré sur le partage, la solidarité et la créativité.</p>
             <a href="festival.html" class="festival__link">
                 <img src="/assets/img/festival.webp" alt="Visuel du festival" class="festival__img" />
             </a>
@@ -86,7 +89,9 @@
                 <p class="programme__description">Explorez les projections prévues.</p>
             
                 <div class="programme__carousel">
-                    <button class="programme__carousel-btn programme__carousel-btn--prev" aria-label="Précédent">←</button>
+                    <button class="programme__carousel-btn programme__carousel-btn--prev" aria-label="Précédent">
+                        <span aria-hidden="true">←</span>
+                    </button>
                     <div class="programme__carousel-track-container">
                         <div class="programme__carousel-track">
                             <article class="programme__item">
@@ -106,7 +111,9 @@
                             </article>
                         </div>
                     </div>
-                    <button class="programme__carousel-btn programme__carousel-btn--next" aria-label="Suivant">→</button>
+                    <button class="programme__carousel-btn programme__carousel-btn--next" aria-label="Suivant">
+                        <span aria-hidden="true">→</span>
+                    </button>
                 </div>
             </section>
 
@@ -149,8 +156,6 @@
             <a href="mailto:info@matsurifestival.com" class="footer__social-link">
                 <img src="assets/img/gmail.png" alt="Email" class="footer__social-img">
             </a>
-            
-            
         </div>
         <p>Enzo Locatelli MMI 1 B2</p>
         <br>

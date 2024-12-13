@@ -2,9 +2,9 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Page pour acheter ses billets">
+    <meta name="description" content="Page pour contacter le festival">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Billetterie - Cinematsuri</title>
+    <title>Contact - Cinematsuri</title>
     <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
     <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
@@ -22,16 +22,19 @@
             </a>
         </div>
         <button class="header__toggle" aria-label="Ouvrir le menu">
-            <span class="header__toggle-bar"></span>
-            <span class="header__toggle-bar"></span>
-            <span class="header__toggle-bar"></span>
+            <span class="header__toggle-bar" aria-hidden="true"></span>
+            <span class="header__toggle-bar" aria-hidden="true"></span>
+            <span class="header__toggle-bar" aria-hidden="true"></span>
         </button>
     </header>
 
     <!-- Menu latéral -->
     <nav class="nav">
-        <button class="nav__close" aria-label="Fermer le menu">&times;</button>
+        <button class="nav__close" aria-label="Fermer le menu">
+            <span aria-hidden="true">&times;</span>
+        </button>
         <ul class="nav__list">
+            <li class="nav__item"><a href="index.html" class="nav__link">Accueil</a></li>
             <li class="nav__item"><a href="programme.html" class="nav__link">Programme</a></li>
             <li class="nav__item"><a href="bandes-annonces.html" class="nav__link">Bandes-annonces</a></li>
             <li class="nav__item"><a href="festival.html" class="nav__link">Le Festival</a></li>
@@ -41,33 +44,42 @@
     </nav>
 
     <main class="main">
-        <!-- Section Billetterie -->
-        <section class="section ticket">
-            <img src="/assets/img/img1.webp" alt="sakura" class="background__img" />
-            <h2 class="section__title ticket__title">Billetterie</h2>
-            <p class="ticket__description">
-                Bienvenue sur la page de billetterie du Festival Matsuri ! Deux options de pass sont disponibles pour vous permettre de profiter de l'événement en toute simplicité :
+        <!-- Section Contact -->
+        <section class="section contact">
+            <img src="/assets/img/img1.webp" alt="" class="background__img" aria-hidden="true" />
+            <h2 class="section__contact contact__title">Contact</h2>
+            <p class="contact__description">
+                Contactez-nous. Vous avez des questions ou besoin d’informations supplémentaires sur le Festival Matsuri ? Nous sommes là pour vous aider ! Voici comment nous joindre :
                 <br><br>
-                • Matsuri Pass : 15€ par personne. Ce pass vous donne accès à toutes les activités du festival.
+                • Adresse e-mail : info@matsurifestival.com
                 <br>
-                • MatsuKID : 8€ pour les enfants de moins de 12 ans. Un tarif réduit pour les plus jeunes festivaliers !
+                • Téléphone : +33 1 23 45 67 89
                 <br><br>
-                Chaque billet est disponible en quelques clics. Il vous suffit de sélectionner l'option qui correspond à vos besoins, puis de cliquer sur "Acheter" pour compléter votre commande.
+                Vous pouvez également remplir le formulaire ci-dessous, et nous reviendrons vers vous dans les plus brefs délais.
             </p>
+            <form action="#" method="post" class="contact__form">
+                <div class="contact__form-group">
+                    <label for="name" class="contact__form-label">Name</label>
+                    <input type="text" id="name" name="name" class="contact__form-input" required>
+                </div>
 
-            <div class="ticket__cards">
-                <div class="ticket__card">
-                    <h3 class="ticket__card-title">Matsuri Pass</h3>
-                    <p class="ticket__card-price">15€ <span class="ticket__card-unit">/pers</span></p>
-                    <a href="achat.html" class="ticket__card-cta">Acheter</a>
+                <div class="contact__form-group">
+                    <label for="surname" class="contact__form-label">Surname</label>
+                    <input type="text" id="surname" name="surname" class="contact__form-input" required>
                 </div>
-                <div class="ticket__card">
-                    <h3 class="ticket__card-title">MatsuKID</h3>
-                    <p class="ticket__card-price">8€ <span class="ticket__card-unit">/enfants</span></p>
-                    <p class="ticket__card-condition">* Condition : enfant -12 ans</p>
-                    <a href="achat.html" class="ticket__card-cta">Acheter</a>
+
+                <div class="contact__form-group">
+                    <label for="email" class="contact__form-label">Email</label>
+                    <input type="email" id="email" name="email" class="contact__form-input" required>
                 </div>
-            </div>
+
+                <div class="contact__form-group">
+                    <label for="message" class="contact__form-label">Message</label>
+                    <textarea id="message" name="message" class="contact__form-textarea" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="contact__form-submit">Envoyer</button>
+            </form>
         </section>
 
         <!-- Suivez-nous -->
@@ -82,8 +94,6 @@
                 <a href="mailto:info@matsurifestival.com" class="footer__social-link">
                     <img src="assets/img/gmail.png" alt="Email" class="footer__social-img">
                 </a>
-                
-                
             </div>
             <p>Enzo Locatelli MMI 1 B2</p>
             <br>
