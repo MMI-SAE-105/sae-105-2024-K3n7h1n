@@ -6,8 +6,8 @@
 - NOM : Locatelli
 - PRÉNOM : Enzo
 - GROUPE : MMI B2
-- URL du site : 
-- URL FIGMA : 
+- URL du site : https://tiny-tapioca-839c6b.netlify.app
+- URL FIGMA : https://www.figma.com/design/MC0hYMeFXVIR0Ma51ZpPeS/SAE-103?node-id=25-37&t=41LWpHxHdZVFJprL-1
 
 ## Sujet
 
