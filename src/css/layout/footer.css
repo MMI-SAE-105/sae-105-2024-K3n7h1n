@@ -2,6 +2,7 @@
     background: var(--color-blue-light);
     text-align: center;
     padding: 1rem;
+    color: var(--color-yellow);
 }
 
 .footer__socials {
@@ -9,6 +10,7 @@
     justify-content: center;
     gap: 1rem;
     margin-bottom: 1rem;
+    color: var(--color-yellow);
 }
 
 .footer__social-link {
@@ -16,6 +18,7 @@
     color: var(--color-black);
     font-weight: bold;
     transition: color 0.3s ease;
+    color: var(--color-yellow);
 }
 
 .footer__social-link:hover {
@@ -24,5 +27,5 @@
 
 .footer__copy {
     font-size: 0.8rem;
-    color: var(--color-black);
+    color: var(--color-yellow);
 }
