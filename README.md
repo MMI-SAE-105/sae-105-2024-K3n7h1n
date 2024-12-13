@@ -3,11 +3,11 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
-- URL du site :
-- URL FIGMA :
+- NOM : Locatelli
+- PRÉNOM : Enzo
+- GROUPE : MMI B2
+- URL du site : 
+- URL FIGMA : 
 
 ## Sujet
 

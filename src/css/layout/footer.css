@@ -29,3 +29,8 @@
     font-size: 0.8rem;
     color: var(--color-yellow);
 }
+
+.footer__social-img{
+    width: 30px;
+    height: 30px;
+}

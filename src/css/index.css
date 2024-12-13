@@ -10,7 +10,6 @@
 /* Components */
 @import '/src/css/components/menu.css';
 @import '/src/css/components/hero.css';
-
 @import '/src/css/components/event.css';
 @import '/src/css/components/contact.css';
 @import '/src/css/base/media.css';

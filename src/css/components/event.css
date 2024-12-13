@@ -97,6 +97,7 @@
 
 .festival__description {
     margin-bottom: 1rem;
+    
 }
 
 .festival__link {
@@ -334,7 +335,7 @@
     color: var(--color-white);
 }
 
-/* Thanks page */
+/* Page Merci */
 .thanks__description {
     font-size: 1rem;
     line-height: 1.5;
@@ -350,4 +351,14 @@
 .thanks__image {
     width: 100%;
     height: auto;
+}
+
+/* logo Partenaires */
+
+.partenaire__logo-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
 }
