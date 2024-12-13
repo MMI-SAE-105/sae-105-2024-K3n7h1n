@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Programmes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Festival Cinematsu</title>
     <link rel="stylesheet" href="/src/css/index.css" />
@@ -29,7 +30,7 @@
         </ul>
     </nav>
     <section id="festival" class="section festival">
-        <img src="/assets/img/img1.webp" alt="Visuel du festival" class="background__img" />
+        <!-- <img src="/assets/img/img1.webp" alt="Visuel du festival" class="background__img" /> d'après lighthouse l'élément est identifié comme "largest Contentful paint" donc je prefère l'enlever -->
         <h2 class="section__title festival__title">Programme</h2>
         <p class="festival__description">Programme du Festival
             Notre programme met à l’honneur les plus grands studios d’animation japonaise. En partenariat avec le légendaire Studio Ghibli, nous vous proposons une sélection de films incontournables, dont l’inoubliable Le Château Ambulant.
@@ -40,7 +41,7 @@
         <!-- Carrousel Studio Ghibli -->
         <section id="programme-ghibli" class="section programme">
             <h2 class="section__title programme__title">
-                <a  class="programme__title-link">Studio Ghibli</a>
+                <a href="https://www.studioghibli.fr" class="programme__title-link">Studio Ghibli</a>
             </h2>
 
             <div class="programme__carousel">
@@ -71,7 +72,7 @@
         <!-- Carrousel CoMix Wave -->
         <section id="programme-comix" class="section programme">
             <h2 class="section__title programme__title">
-                <a class="programme__title-link">CoMix Wave</a>
+                <a href="https://www.cwfilms.jp/en/" class="programme__title-link">CoMix Wave</a>
             </h2>
             <div class="programme__carousel">
                 <button class="programme__carousel-btn programme__carousel-btn--prev" aria-label="Précédent">←</button>
@@ -101,7 +102,7 @@
         <!-- Carrousel Bones -->
         <section id="programme-bones" class="section programme">
             <h2 class="section__title programme__title">
-                <a class="programme__title-link">Bones</a>
+                <a href="https://fr.wikipedia.org/wiki/Bones_(studio)" class="programme__title-link">Bones</a>
             </h2>
             <div class="programme__carousel">
                 <button class="programme__carousel-btn programme__carousel-btn--prev" aria-label="Précédent">←</button>
@@ -113,7 +114,7 @@
                             <p class="programme__item-description">My hero Academia Your next<br>Le 13 juillet à 14H</p>  
                         </article>
                         <article class="programme__item">
-                            <img src="/assets/img/film3.webp" alt="Affiche du film 2" class="programme__item-img" />
+                            <img src="/assets/img/mhafilm3.webp" alt="Affiche du film 2" class="programme__item-img" />
                             <h3 class="programme__item-title">My hero Academia The movie</h3>
                             <p class="programme__item-description">My hero Academia The movie<br>Le 13 juillet à 16H15</p>  
                         </article>
@@ -131,9 +132,15 @@
 
     <footer class="footer">
         <div class="footer__socials">
-            <a href="#" class="footer__social-link">TikTok</a>
-            <a href="#" class="footer__social-link">Instagram</a>
-            <a href="mailto:info@matsurifestival.com" class="footer__social-link">Email</a>
+            <a href="#" class="footer__social-link">
+                <img src="assets/img/facebook.png" alt="Facebook" class="footer__social-img">
+            </a>
+            <a href="#" class="footer__social-link">
+                <img src="assets/img/instagram.png" alt="Instagram" class="footer__social-img">
+            </a>
+            <a href="mailto:info@matsurifestival.com" class="footer__social-link">
+                <img src="assets/img/gmail.png" alt="Email" class="footer__social-img">
+            </a>
         </div>
         <p>Enzo Locatelli MMI 1 B2</p>
         <br>
